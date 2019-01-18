@@ -1,6 +1,6 @@
 const buttonHochzaehlen = document.getElementById('plus');
 const buttonReset = document.getElementById('reset');
-const ausgabe = document.getElementById('ausgabe');
+const ausgabe = document.getElementById('display');
 
 let wert = 0;
 if(!localStorage.getItem('wert')){
