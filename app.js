@@ -7,12 +7,12 @@ const liste = document.getElementById('liste');
 let daten = [];
 
 
-if(!localStorage.getItem('daten')){
-    daten = [];
-    speichern();
-}else{
+if(localStorage.getItem('daten')){
     let text = localStorage.getItem('daten');
     daten = JSON.parse(text);
+}else{
+    daten = [];
+    speichern();    
 }
 
 listeAusgeben();
